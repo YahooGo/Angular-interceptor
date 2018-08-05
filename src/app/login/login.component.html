@@ -1,0 +1,28 @@
+<p>
+  login works!
+</p>
+<nav>
+  <a routerLink='/'>goBack</a>
+</nav>
+
+<div>
+  <div style="margin-top:10px;">
+      <label for="name">name:</label>
+      <input type="text" placeholder="name" [(ngModel)]="username">
+  </div>
+<div style="margin:10px 0;">
+    <label for="name">password:</label>
+    <input type="password" placeholder="password" [(ngModel)]="password">
+</div>
+  <a (click)="login()" style="border: 1px solid #ccc;margin-left: 10px;padding:3px;">login</a>
+</div>
+{{messages}}
+<div>
+  <p *ngFor="let item of messages; let i = index">
+    {{i}}----{{item}}
+  </p>
+</div>
+
+
+
+
